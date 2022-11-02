@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poopins", sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hodiny-top {
+    padding: 20px;
+    text-align: center;
+}
+
+.hodiny-cas {
+    font-size: 48px;
+    color: #112;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+main {
+    margin: 10px;
+}
+
+.cojednes {
+    font-size: 22px;
+}
+
+.fa-glass-water {
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+.odkazy {
+    margin-top: 40px;
+    width: 85%;
+    max-width: 450px;
+}
+
+.odkaz {
+    font-size: 22px;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px;
+    background: hsl(220, 26%, 16%);
+    color: #f4f7ff;
+    width: 40%;
+}
+
+
+.odkazbig {
+    width: 80%;
+}
+
+/* waves */
+
+.wave-container {
+    padding-bottom: 40px;
+    background: linear-gradient(45deg, hsl(213, 70%, 41%), hsl(201, 70%, 41%));
+    position: relative;
+}
+
+.wave-container::before {
+    content: "";
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    /*animation: wave 10s infinite infinite;*/
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 132' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0C22.4434 -1 28.9842 2 55 23C94.1849 54 121.997 56 158.5 57C198.5 59 200 44 240 51C280 58 320 88 360 88C400 88 440 58 480 54C520 49 560 68 600 83C640 98 680 108 720 113C760 117 800 117 840 103C880 88 920 58 960 61C1000 63 1040 98 1080 93C1120 88 1127.5 59 1147.5 37C1171.48 11 1185.65 0 1200 0V132H1180C1160 132 1120 132 1080 132C1040 132 1000 132 960 132C920 132 880 132 840 132C800 132 760 132 720 132C680 132 640 132 600 132C560 132 520 132 480 132C440 132 400 132 360 132C320 132 280 132 240 132C200 132 160 132 120 132C80 132 40 132 20 132H0V0.0103865Z' fill='%23FFF5EE'/></svg>");
+}
+
+@keyframes wave {
+    0% {
+        background-position: 40vw bottom;
+    }
+    50% {
+        background-position: 60vw bottom;
+    }
+    100% {
+
+        background-position: 40vw bottom;
+    }
+
+}
+
+@media(max-width:850px) {
+    .wave-container::before {
+        height: 15px
+    }
+}
+
+
+/* SNOW */
